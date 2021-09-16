@@ -1,0 +1,285 @@
+
+*,
+*::before,*::after{box-sizing: border-box;}
+:root {
+    --main-white-color: #FFFFFF;/*основной цвет на сайте*/
+    --main-black-color: #212121;/* основной цвет на сайте*/
+    --main-grey-color: #757575; /*используется в текстовых описаниях профессий и деятельности*/
+    --logo-black-color: #000;/*цвет лого подвала в спане*/
+    --contact-color:rgba(255, 255, 255, 0.6);/* для телефона и почты подвала*/
+    --back-blue-color: #2196f3;/* кнопка, ссылка при нажатии, лого*/
+    --background-black-color:  #2F303A;/* фон героя и подвала*/
+    --background-grey-color:#F5F4FA;/* фон блока "наша команда"*/
+}
+
+ /*Общее оформление*/
+ body {
+    font-family:Roboto,Raleway,sans-serif;
+    font-style: normal;
+    background-color: var(--main-white-color);} 
+    
+   
+/* Общее оформление картинок*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* Убрать маркеры */
+li {
+    list-style-type: none; }
+ /*Спрятать заголовок*/
+ .offscreen{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+
+  /* header */
+  .header {
+    background: var(--main-white-color);
+} 
+/* WebStudio */
+.logo {
+    width: 145px;
+    height: 31px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    /* identical to box height */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--back-blue-color);
+    text-decoration: none;
+}
+.logstudio {
+        color:var(--logo-black-color);
+        text-decoration:none;}
+/* НАВИГАЦИЯ КОНТАКТЫ */
+/* Cсылки при нажатии меняют цвет*/
+
+.nav-link li a {
+color: var( --main-black-color);
+text-decoration:none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.nav-link li a:hover,
+.nav-link li a:focus {
+    color:var(--back-blue-color);
+}
+.nav-link li a:active {
+    color: var( --main-black-color);
+}
+/* E-mail Tel*/
+.contact-link li a {
+color: var( --main-grey-color);
+text-decoration:none;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;}
+.contact-link li a:hover,
+.contact-link li a:focus {
+    color:var(--back-blue-color);
+}
+.contac-tlink li a:active {
+    color: var( --main-grey-color);
+}
+
+/*ШАПКА заказать услугу*/
+
+.hero {background:var(--background-black-color);}
+
+
+/*-- Особенности --*/
+
+.section-properties li h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var( --main-black-color);
+    }
+    .section-properties li p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.7;
+       letter-spacing: 0.03em; 
+       color:var( --main-grey-color);
+        }
+
+/*Чем мы занимаемся*/
+.employment h2 {font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var( --main-black-color);
+    }
+    .employment  ul li img {
+        width: 370px;
+        height: 294px;
+        padding: 2px;
+    }
+
+/* Эффективные решения для вашего бизнеса */
+.hero-text {
+font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--main-white-color);}
+/*Кнопка заказать услугу*/
+.hero-button { background:var(--back-blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-white-color);
+    }
+/* Наша команда*/
+.team-section {background: var(--background-grey-color);}
+.team-section h2 {font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var( --main-black-color);
+    }
+.team-section h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var( --main-black-color);
+    }
+.team-section p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color:var( --main-grey-color);
+    }
+
+
+
+                                    /* ВТОРАЯ СТРАНИЦА*/
+ /* ФИЛЬТРЫ 2-я страница */
+/*Кнопки фильтра, 2-я страница, при нажатии меняют цвет*/
+.filter-button:hover,
+.filter-button:focus {
+    background:var(--back-blue-color); 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;}
+.filter-button:active {
+    color:var(--background-grey-color);
+}
+.filter-button {background:var(--background-grey-color); 
+    border: none !important;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var( --main-black-color);
+   }
+
+/* ПРОЕКТЫ 2-я страница  */
+
+.project section {
+    background: var(--main-white-color);
+    border: 1px solid var(--main-white-color);
+    box-sizing: border-box;
+   
+}
+.container { text-decoration:none;}
+.project-name {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var( --main-black-color);}
+
+.project-properties {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color:var( --main-grey-color);
+}
+
+
+                                       /*ОБЩИЙ ПОДВАЛ*/
+ /* Footer*/
+ .footerbg {background:var(--background-black-color);}
+ .address-footer li a   {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;  
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    }   
+    .contact-footer {
+    color: var(--contact-color);  
+    }
+    .contact-footer-adress {
+    color: var(--main-white-color);}
+
+.logstudio-footer {
+        color: var(--main-white-color);
+        text-decoration:none;}
+           
+
+
+                         
+                            
+        
